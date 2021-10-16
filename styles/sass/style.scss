@@ -2,6 +2,15 @@
 @import '_vars';
 @import '_font';
 @import '_globalStyle';
+@import '_nav';
 
+html {
+    background-color: $navy;
+    background-image: url('../../assets/images/Lines.svg');
+}
 
+body {
+    font-family: "Louis-George-Cafe.ttf";
+    overflow: hidden;
+}
 

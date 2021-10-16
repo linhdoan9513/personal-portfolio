@@ -237,7 +237,7 @@ html {
 
 @font-face {
   font-family: "Louis-George-Cafe.ttf";
-  src: url("../fonts/Louis-George-Cafe.ttf");
+  src: url("../../assets/fonts/Louis-George-Cafe.ttf");
 }
 @font-face {
   font-family: "Louis-George-Cafe-Bold.ttf";
@@ -249,4 +249,175 @@ html {
 }
 html {
   background-color: #07011e;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Louis-George-Cafe.ttf";
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.201);
+  -webkit-animation: 0.5s ease-out 0s 1 slideInFromTop;
+          animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  height: 8rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #fd5c4c;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fd5c4c;
+}
+
+.resume {
+  padding: 10px 15px;
+  border: 1px dashed #fd5c4c;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.201);
+  }
+
+  .nav-menu.active {
+    top: 8rem;
+  }
+
+  .nav-item {
+    margin: 3rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+html {
+  background-color: #07011e;
+  background-image: url("../../assets/images/Lines.svg");
+}
+
+body {
+  font-family: "Louis-George-Cafe.ttf";
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
