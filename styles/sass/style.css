@@ -372,6 +372,11 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    -webkit-animation: none;
+            animation: none;
+  }
+
   .nav-menu {
     position: fixed;
     top: -100%;
@@ -426,7 +431,8 @@ header {
 .landing-container {
   background: url("../../assets/images/bx-home.svg") no-repeat scroll center center;
   background-size: 80%;
-  height: 80vh;
+  background-position: 100px;
+  padding: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +576,85 @@ header {
     font-size: 1.8rem;
   }
 }
+.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+}
+.aboutMe .imageContainer {
+  position: relative;
+  width: 40%;
+  margin-right: 100px;
+}
+.aboutMe .textContainer {
+  width: calc(40% - 100px);
+  padding: 150px 0;
+}
+.aboutMe .textContainer div h4, .aboutMe .textContainer div a {
+  color: #ffffff;
+}
+.aboutMe .textContainer div h3 {
+  color: #ff4952;
+  font-size: 2.5rem;
+}
+.aboutMe .textContainer div h4 {
+  font-size: 6rem;
+  padding: 2.5rem 0;
+}
+.aboutMe .textContainer div p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #808291;
+}
+.aboutMe .profileImage {
+  position: relative;
+  top: 0;
+  left: 100px;
+  z-index: 3;
+}
+.aboutMe .profileBackground {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 2;
+}
+.aboutMe .circle {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 940px) {
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutMe .imageContainer,
+.aboutMe .textContainer {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .aboutMe .textContainer {
+    text-align: center;
+  }
+  .aboutMe .circle {
+    left: 0px;
+    z-index: 1;
+  }
+  .aboutMe .profileImage {
+    left: 150px;
+  }
+  .aboutMe .profileBackground {
+    left: 80px;
+  }
+}
 html {
   background-color: #07011e;
   background-image: url("../../assets/images/Lines.svg");
@@ -577,5 +662,5 @@ html {
 
 body {
   font-family: "Louis-George-Cafe.ttf";
-  overflow: hidden;
+  overflow: scroll;
 }/*# sourceMappingURL=style.css.map */

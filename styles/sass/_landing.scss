@@ -1,7 +1,8 @@
 .landing-container {
     background: url("../../assets/images/bx-home.svg") no-repeat scroll center center;
     background-size: 80%;
-    height: 80vh;
+    background-position: 100px;
+    padding: 200px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
