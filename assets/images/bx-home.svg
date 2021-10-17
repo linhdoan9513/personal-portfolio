@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1092px" height="1041px" viewBox="0 0 1092 1041" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Rectangle@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="60.9308842%" y1="67.933047%" x2="47.012011%" y2="2.44953716%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.21" offset="0%"></stop>
+            <stop stop-color="#0055FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0700000003">
+        <g id="Portfolio-Template-Copy-3" transform="translate(-298.000000, -257.000000)" fill="url(#linearGradient-1)">
+            <rect id="Rectangle" transform="translate(843.986763, 777.517871) rotate(50.000000) translate(-843.986763, -777.517871) " x="571.986763" y="293.017871" width="544" height="969"></rect>
+        </g>
+    </g>
+</svg>

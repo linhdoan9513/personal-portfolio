@@ -1,0 +1,142 @@
+.landing-container {
+    background: url("../../assets/images/bx-home.svg") no-repeat scroll center center;
+    background-size: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .hero-section {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 8rem;
+        color: $white;
+        margin: 2rem 0;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1.7em;
+        color: $white;
+        font-weight: 400;
+        margin: 2rem 0;
+    }
+
+    .span {
+        display: block;
+        width: 50px;
+        height: 5px;
+        background-color: $yellow;
+        margin-left: 5px;
+    }
+
+    .red {
+        color: $orange;
+    }
+
+    .social-media {
+        color: white;
+        width: 20%;
+        
+        h3 {
+            padding: 2rem 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        ul {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
+
+            li {
+                font-size: 2rem;
+                padding: 1rem; 
+                margin-right: 1rem;
+                border: $border;
+
+                i {
+                    color:$white;
+                }
+
+                i:hover, 
+                i:focus {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .landing-container {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        .social-media {
+            width: 100%;
+
+            ul {
+                justify-content: flex-start;
+            }
+
+            h3 {
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .landing-container {
+        .hero-section {
+            display: flex; 
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-media {
+            width: 100%;
+
+            h3 {
+                text-align: center;
+            }
+
+            ul {
+                justify-content: center;
+            }
+        }
+
+        .hero-section {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing-container {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+
+
+

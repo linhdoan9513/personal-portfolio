@@ -38,9 +38,8 @@ header {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: $white;
+    background-color: $yellow;
 }
 
 .nav-menu {
@@ -54,7 +53,7 @@ header {
 }
 
 .nav-link {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: $white;
 }
@@ -72,7 +71,7 @@ header {
 
 .resume {
     padding: 10px 15px; 
-    border: 1px dashed $orange;
+    border: 1px dashed $yellow;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,6 +83,8 @@ header {
         width: 100%;
         transition: 0.5s;
         border-bottom: 1px solid rgba(255, 255, 255, 0.201);
+        background-color: $navy;
+        z-index: 99;
     }
 
     .nav-menu.active {
@@ -92,6 +93,14 @@ header {
 
     .nav-item {
         margin: 3rem 0;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+    }
+
+    .nav-logo {
+        font-size: 2.5rem;
     }
 
     .hamburger {
