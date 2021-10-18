@@ -1,6 +1,6 @@
 .portfolio-section {
+    color: $white;
     
-    color: white;
     h3 {
         color: $red;
         font-size: 2.5rem;
@@ -11,14 +11,162 @@
         padding: 2rem 0;
     }
 
+    .project-container {
+        padding: 50px 0;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .project-image {
+            width: 50%;
+        }
+
+        .project-text {
+            padding-left: 50px;
+            width: 50%;
+        }
+
+        h5 {
+            font-size: 3rem;
+            color: $orange;
+        }
+
+        h6 {
+            font-size: 2rem;
+            border-bottom: 1px solid $orange;
+            display: inline-block;
+        }
+
+        p {
+              font-size: 1.8rem;
+              line-height: 1.6;
+              padding: 2rem 0;
+        }
+
+        i {
+            font-size: 3rem;
+            padding: 0.8rem 0;
+        }
+
+        .firebase {
+            width: 2.5rem;
+            height: auto;
+            padding: 0.9rem 0;
+        }
+
+        ul {
+            display: flex; 
+            align-items: center;
+            li {
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                padding: 2rem;
+            }
+        }
+         a {
+             font-size: 2.5rem;
+             color: $white;
+             cursor: pointer;
+         }
+
+         .link {
+             li {
+                 margin-top: 2rem;
+                 margin-right: 2rem;
+                 animation: neon 1s ease-in-out infinite alternate;
+                 text-transform: uppercase;
+             }
+         }
+
+
+         @keyframes neon {
+             from {
+                 text-shadow:
+                     0 0 6px rgba(255, 255, 255, 0.92),
+                     0 0 30px $orange,
+                     0 0 12px $orange,
+                     0 0 21px $orange,
+                     0 0 34px $orange,
+                     0 0 54px $orange;
+             }
+
+             to {
+                 text-shadow:
+                     0 0 6px rgba(255, 255, 255, 0.98),
+                     0 0 30px $orange,
+                     0 0 12px $orange,
+                     0 0 22px $orange,
+                     0 0 38px $orange,
+                     0 0 60px $orange;
+             }
+         }
+    }
+    
+    .reverse {
+        margin:100px 0;
+        flex-direction: row-reverse;
+         .project-text {
+             padding-left: 0;
+         }
+
+         .project-image {
+             padding-left: 50px;
+         }
+
+
+    }
+   
 }
 
-@media screen and (max-width: 760px) {
-    .portfolio-section {
 
+@media screen and (max-width: 940px) {
+    .portfolio-section {
         h4 {
             font-size: 4rem;
         }
 
+        .project-container {
+            display: flex;
+            flex-direction: column;
+
+            .project-image,
+            .project-text {
+                width: 100%
+            }
+
+            .project-image {
+                display: flex; 
+                justify-content: center;
+            }
+
+            .project-text {
+                padding: 4rem 0;
+            }
+        }
+
+         .reverse {
+             margin: 50px 0;
+             .project-image {
+                 padding-left: 0;
+             }
+         }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .portfolio-section {
+        text-align: center;
+
+        .project-container {
+             ul {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+             }
+        }
     }
 }

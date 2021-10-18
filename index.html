@@ -14,10 +14,10 @@
             <a href="#" class="nav-logo">Linh Doan.</a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About Me</a>
+                    <a href="#about" class="nav-link">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Contact</a>
@@ -35,10 +35,10 @@
     </header>
     <main class="wrapper">
       <section class="landing-container">
-        <div class="hero-section">
+        <div  class="hero-section">
           <span class="span"></span>
           <h1>Hello, I'm Linh Doan</h1>
-          <h2>
+          <h2 id="about">
             A <span class="red">Front End Developer</span>, passionate about
             building accessible and intuitive sites.
           </h2>
@@ -47,8 +47,8 @@
             <h3>Social</h3>
             <ul class="list">
                 <li><a href="https://www.linkedin.com/in/linh-thuy-doan/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                <li><a href="www.linkedin.com/in/linh-thuy-doan/"><i class="fab fa-github"" aria-hidden="true"></i></a></li>
-                <li><a href="mailto:doanlinh9513@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></li>
+                <li><a href="https://github.com/linhdoan9513"><i class="fab fa-github"" aria-hidden="true"></i></a></li>
+                <li><a href="mailto: doanlinh9513@gmail.com"><i class="far fa-envelope"></i></a></li>
             </ul>
         </div>
       </section>
@@ -101,9 +101,86 @@
             <li><img class="photoshop" src="./assets/images/photoshop.png" alt="photoshop logo">Adobe Photoshop</li>
           </ul>
       </section>
-      <section class="portfolio-section">
-        <h3>portfolio</h3>
+      <section id="portfolio" class="portfolio-section">
+        <h3>featured projects</h3>
         <h4>Some things I built </h4>
+        <div class="project-container">
+          <div class="project-image">
+            <img class="portfolio" src="./assets/images/case-study-1.png" alt="portfolio1">
+          </div>
+          <div class="project-text">
+            <h5>Personal Budget App</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti cumque, doloremque dolore numquam autem illum in quas eius, dolorum facere est culpa eligendi ab maiores quos iste, sunt dolorem!</p>
+            <h6>Tech Stack</h6>
+            <ul class="tech">
+              <li><i class="fab fa-html5"></i>Html5</li>
+              <li><i class="fab fa-css3-alt"></i>Css3</li>
+              <li><i class="fab fa-react"></i>React</li>
+              <li><img class="firebase" src="./assets/images/firebase.png" alt="firebase logo">Firebase</li>
+            </ul>
+            <h6>Take a peek</h6>
+            <ul class="link">
+              <!-- <li><i class="fas fa-arrow-circle-right"></i></li> -->
+              <li><a href="https://budget-planner-linh.netlify.app/">Live Link</a></li>
+              <li><a href="https://github.com/linhdoan9513/linh-doan-project3">Repo</a></li>
+            </ul>
+          </div>
+          <div class="project-container reverse">
+          <div class="project-image">
+            <img class="portfolio" src="./assets/images/case-study-1.png" alt="portfolio1">
+          </div>
+          <div class="project-text">
+            <h5>Covid Tracker</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti cumque, doloremque dolore numquam autem illum in quas eius, dolorum facere est culpa eligendi ab maiores quos iste, sunt dolorem!</p>
+            <h6>Tech Stack</h6>
+            <ul class="tech">
+              <li><i class="fab fa-html5"></i>Html5</li>
+              <li><i class="fab fa-css3-alt"></i>Css3</li>
+              <li><i class="fab fa-react"></i>React</li>
+              <li><img class="firebase" src="./assets/images/firebase.png" alt="firebase logo">Firebase</li>
+            </ul>
+            <h6>Take a peek</h6>
+            <ul class="link">
+              <li><a href="https://budget-planner-linh.netlify.app/">Live Link</a></li>
+              <li><a href="https://github.com/linhdoan9513/linh-doan-project3">Repo</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="project-container">
+          <div class="project-image">
+            <img class="portfolio" src="./assets/images/case-study-1.png" alt="portfolio1">
+          </div>
+          <div class="project-text">
+            <h5>Cryptocurrency Tracker</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti cumque, doloremque dolore numquam autem illum in quas eius, dolorum facere est culpa eligendi ab maiores quos iste, sunt dolorem!</p>
+            <h6>Tech Stack</h6>
+            <ul class="tech">
+              <li><i class="fab fa-html5"></i>Html5</li>
+              <li><i class="fab fa-css3-alt"></i>Css3</li>
+              <li><i class="fab fa-react"></i>React</li>
+              <li><img class="firebase" src="./assets/images/firebase.png" alt="firebase logo">Firebase</li>
+            </ul>
+            <h6>Take a peek</h6>
+            <ul class="link">
+              <li><a href="https://budget-planner-linh.netlify.app/">Live Link</a></li>
+              <li><a href="https://github.com/linhdoan9513/linh-doan-project3">Repo</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="other-project">
+        <h3>other projects</h3>
+        <h4>Some other things I built </h4>
+        <div class="card-container">
+          <div class="card-image">
+            
+          </div>   
+          <div class="card-text">
+            <h6>Planted Invitation</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga sapiente ab saepe vero repudiandae doloremque dolor reprehenderit ullam ipsum?</p>
+          </div>                             
+        </div>
       </section>
     </main>
 </body>

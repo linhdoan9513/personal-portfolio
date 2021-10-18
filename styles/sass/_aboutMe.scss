@@ -124,24 +124,30 @@
  }
 
  @media screen and (max-width: 760px) {
-     .about-me {
+    .about-me {
+    .text-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    }
 
-        .text-container {
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
+    .image-container {
+        margin-bottom: 5rem;
+    }
+
+        .profile-image {
+            position: relative;
+            top: 0;
+            left: 50px;
+            z-index: 3;
         }
+    }
 
-        .image-container {
-            margin-bottom: 5rem;
-        }
-     }
-
-     .profile-image,
-     .profile-background,
-     .circle {
-        width: 90%;
-     }     
+    .profile-image,
+    .profile-background,
+    .circle {
+    width: 90%;
+    }     
  }
 
  @media screen and (max-width: 480px) {
