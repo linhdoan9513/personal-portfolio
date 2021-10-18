@@ -80,7 +80,7 @@
         align-items: flex-start;
 
         h1 {
-            font-size: 5rem;
+            font-size: 6rem;
         }
 
         .social-media {
@@ -100,6 +100,10 @@
 
 @media screen and (max-width: 760px) {
     .landing-container {
+        h1 {
+            font-size: 4rem;
+        }
+
         .hero-section {
             display: flex; 
             flex-direction: column;
@@ -128,9 +132,6 @@
 
 @media screen and (max-width: 480px) {
     .landing-container {
-        h1 {
-            font-size: 4rem;
-        }
         h2 {
             font-size: 1.8rem;
         }

@@ -524,7 +524,7 @@ header {
             align-items: flex-start;
   }
   .landing-container h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .landing-container .social-media {
     width: 100%;
@@ -539,6 +539,9 @@ header {
   }
 }
 @media screen and (max-width: 760px) {
+  .landing-container h1 {
+    font-size: 4rem;
+  }
   .landing-container .hero-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,60 +572,94 @@ header {
   }
 }
 @media screen and (max-width: 480px) {
-  .landing-container h1 {
-    font-size: 4rem;
-  }
   .landing-container h2 {
     font-size: 1.8rem;
   }
 }
-.aboutMe {
+.about-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red;
 }
-.aboutMe .imageContainer {
+.about-me .image-container {
   position: relative;
   width: 40%;
   margin-right: 100px;
 }
-.aboutMe .textContainer {
+.about-me .text-container {
   width: calc(40% - 100px);
   padding: 150px 0;
 }
-.aboutMe .textContainer div h4, .aboutMe .textContainer div a {
+.about-me .text-container div h4, .about-me .text-container div a {
   color: #ffffff;
 }
-.aboutMe .textContainer div h3 {
+.about-me .text-container div h3 {
   color: #ff4952;
   font-size: 2.5rem;
 }
-.aboutMe .textContainer div h4 {
+.about-me .text-container div h4 {
   font-size: 6rem;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
-.aboutMe .textContainer div p {
+.about-me .text-container div p {
   font-size: 1.8rem;
   line-height: 1.6;
   color: #808291;
+  margin-bottom: 5rem;
 }
-.aboutMe .profileImage {
+.about-me .text-container div .contact-button {
+  margin: 2rem;
+  text-decoration: none;
+  position: relative;
+}
+.about-me .text-container div .contact-button span {
+  color: white;
+  position: relative;
+  font-size: 2rem;
+  top: 3px;
+}
+.about-me .text-container div .contact-button:hover::before {
+  width: 135%;
+  background: #ff4952;
+}
+.about-me .text-container div .contact-button::before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: -20px;
+  display: block;
+  border-radius: 30px;
+  background: rgba(255, 73, 82, 0);
+  border: 1px solid rgba(255, 73, 82, 0.6);
+  border-right: 1px solid transparent;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about-me .text-container div .fas {
+  position: relative;
+  color: #ffffff;
+  padding-left: 10px;
+  top: 3px;
+  font-size: 1.5rem;
+}
+.about-me .profile-image {
   position: relative;
   top: 0;
   left: 100px;
   z-index: 3;
 }
-.aboutMe .profileBackground {
+.about-me .profile-background {
   position: absolute;
   top: 100px;
   left: 0;
   z-index: 2;
 }
-.aboutMe .circle {
+.about-me .circle {
   position: absolute;
   top: -50px;
   left: -20px;
@@ -630,29 +667,144 @@ header {
 }
 
 @media screen and (max-width: 940px) {
-  .aboutMe {
+  .about-me {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutMe .imageContainer,
-.aboutMe .textContainer {
+  .about-me .image-container,
+.about-me .text-container {
     margin: 0 auto;
     width: 80%;
   }
-  .aboutMe .textContainer {
-    text-align: center;
+  .about-me .text-container {
+    margin: 0;
   }
-  .aboutMe .circle {
-    left: 0px;
+  .about-me .text-container div h4 {
+    font-size: 4rem;
+  }
+
+  .circle {
+    left: -50px;
     z-index: 1;
   }
-  .aboutMe .profileImage {
-    left: 150px;
+}
+@media screen and (max-width: 760px) {
+  .about-me .text-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
   }
-  .aboutMe .profileBackground {
-    left: 80px;
+  .about-me .image-container {
+    margin-bottom: 5rem;
+  }
+
+  .profile-image,
+.profile-background,
+.circle {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-me .circle,
+.about-me .profile-background {
+    display: none;
+  }
+}
+.skill-container {
+  padding: 100px 0;
+  color: #ffffff;
+}
+.skill-container h3 {
+  color: #ff4952;
+  font-size: 2.5rem;
+}
+.skill-container h4 {
+  font-size: 6rem;
+  padding: 2rem 0;
+}
+.skill-container i {
+  font-size: 6rem;
+  padding: 0.5rem 0;
+}
+.skill-container li:hover,
+.skill-container li:focus {
+  border-bottom: 1px solid #fd5c4c;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.skill-container img {
+  width: 5.5rem;
+  height: auto;
+  padding: 0.5rem 0;
+}
+.skill-container .jquery,
+.skill-container .photoshop {
+  padding: 1rem 0;
+}
+.skill-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  padding: 3rem 6rem;
+}
+.skill-container .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .skill-container li {
+    padding: 3rem;
+  }
+  .skill-container h4 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .skill-container li {
+    padding: 2rem;
+  }
+}
+.portfolio-section {
+  color: white;
+}
+.portfolio-section h3 {
+  color: #ff4952;
+  font-size: 2.5rem;
+}
+.portfolio-section h4 {
+  font-size: 6rem;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 760px) {
+  .portfolio-section h4 {
+    font-size: 4rem;
   }
 }
 html {

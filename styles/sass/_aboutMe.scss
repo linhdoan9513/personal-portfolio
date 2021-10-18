@@ -1,15 +1,14 @@
- .aboutMe {
+ .about-me {
     display: flex; 
     justify-content: space-between;
-    border: 1px solid red;
 
-    .imageContainer {
+    .image-container {
         position: relative;
         width: 40%;
         margin-right: 100px;
     }
 
-    .textContainer {
+    .text-container {
         width: calc(40% - 100px);
         padding: 150px 0;
          div {
@@ -24,25 +23,68 @@
 
             h4 {
                 font-size: 6rem;
-                padding: 2.5rem 0;
+                padding: 2rem 0;
             }
 
             p {
                 font-size: 1.8rem;
                 line-height: 1.6;
                 color: $grey;
+                margin-bottom: 5rem;
             }
+
+             .contact-button {
+                 margin: 2rem;
+                 text-decoration: none;
+                 position: relative;
+             }
+
+             .contact-button span {
+                 color: white;
+                 position: relative;
+                 font-size: 2rem;
+                 top: 3px;
+             }
+
+            .contact-button:hover::before {
+                width: 135%;
+                background: #ff4952;
+            }
+
+            .contact-button::before {
+                content: "";
+                position: absolute;
+                top: -23px;
+                left: -20px;
+                display: block;
+                border-radius: 30px;
+                background: rgba(255, 73, 82, 0);
+                border: 1px solid rgba(255, 73, 82, 0.6);
+                border-right: 1px solid transparent;
+                width: 60px;
+                height: 60px;
+                transition: all 0.3s ease;
+            }
+
+            .fas {
+                position: relative;
+                color: $white;
+                padding-left: 10px;
+                top: 3px;
+                font-size: 1.5rem;
+            }
+
         }
     }
 
-    .profileImage {
+    .profile-image {
         position: relative;
         top: 0;
         left: 100px;
         z-index: 3;
     }
 
-    .profileBackground {
+    .profile-background {
         position: absolute;
         top: 100px;
         left: 0;
@@ -58,32 +100,57 @@
  }
 
  @media screen and (max-width: 940px) {
-    .aboutMe {
+    .about-me {
         flex-direction: column;
-
-        .imageContainer,
-        .textContainer {
+        .image-container,
+        .text-container {
             margin: 0 auto;
             width: 80%;
         }
 
-        .textContainer {
-            text-align: center;
-        }
-         
-        .circle {
-            left: 0px;
-            z-index: 1;
-        }
-
-        .profileImage {
-            left: 150px;
-        }
-
-        .profileBackground {
-            left: 80px;
-        }
+        .text-container {
+            margin: 0;
+            div {
+                h4 {
+                    font-size: 4rem;
+                }
+            } 
+        } 
     }  
+    .circle {
+        left: -50px;
+        z-index: 1;
+    }
+ }
+
+ @media screen and (max-width: 760px) {
+     .about-me {
+
+        .text-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        }
+
+        .image-container {
+            margin-bottom: 5rem;
+        }
+     }
+
+     .profile-image,
+     .profile-background,
+     .circle {
+        width: 90%;
+     }     
+ }
+
+ @media screen and (max-width: 480px) {
+    .about-me {
+        .circle, 
+        .profile-background {
+            display: none;
+        }
+    }
  }
 
 
