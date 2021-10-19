@@ -1063,6 +1063,9 @@ header {
 .other-project .card-container i {
   font-size: 2.5rem;
 }
+.other-project .card-container .jquery {
+  width: 2.5rem;
+}
 
 @media screen and (max-width: 760px) {
   .other-project .project-body {
