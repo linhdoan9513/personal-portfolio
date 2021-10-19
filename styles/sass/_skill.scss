@@ -1,16 +1,6 @@
 .skill-container {
     padding: 100px 0; 
-    color: $white; 
-
-    h3 {
-        color: $red;
-        font-size: 2.5rem;
-    }
-
-    h4 {
-        font-size: 6rem;
-        padding: 2rem 0;
-    }
+    color: $white;
 
     i {
         font-size: 6rem;
@@ -61,13 +51,10 @@
             padding: 3rem;
         }
 
-        h4 {
-            font-size: 4rem;
-        }
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 480px) {
     .skill-container {
         li {
             padding: 2rem;

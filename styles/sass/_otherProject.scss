@@ -7,15 +7,6 @@
     }
     
     color: $white;
-    h3 {
-        color: $red;
-        font-size: 2.5rem;
-    }
-
-    h4 {
-        font-size: 6rem;
-        padding: 2rem 0;
-    }
 
     .card-container {
         padding: 30px;
@@ -62,3 +53,19 @@
         }
     }
 }
+
+@media screen and (max-width: 760px) {
+    .other-project {
+        .project-body {
+            flex-direction: column;
+
+            .card-container {
+                width: 100%;
+                margin: 30px 0;
+            }
+        }
+    }
+    
+    
+}
+

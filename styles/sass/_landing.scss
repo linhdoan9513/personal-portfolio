@@ -42,11 +42,6 @@
         color: white;
         width: 20%;
         
-        h3 {
-            padding: 2rem 0;
-            font-size: 2rem;
-            text-align: center;
-        }
 
         .list {
               display: flex;
@@ -89,10 +84,6 @@
             .list {
                 justify-content: flex-start;
             }
-
-            h3 {
-                text-align: left;
-            }
         }
     }
 }
@@ -115,10 +106,6 @@
 
         .social-media {
             width: 100%;
-
-            h3 {
-                text-align: center;
-            }
 
             ul {
                 justify-content: center;

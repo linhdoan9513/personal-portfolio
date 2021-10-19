@@ -480,11 +480,6 @@ header {
   color: white;
   width: 20%;
 }
-.landing-container .social-media h3 {
-  padding: 2rem 0;
-  font-size: 2rem;
-  text-align: center;
-}
 .landing-container .social-media .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,9 +533,6 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .landing-container .social-media h3 {
-    text-align: left;
-  }
 }
 @media screen and (max-width: 760px) {
   .landing-container {
@@ -565,9 +557,6 @@ header {
   }
   .landing-container .social-media {
     width: 100%;
-  }
-  .landing-container .social-media h3 {
-    text-align: center;
   }
   .landing-container .social-media ul {
     -webkit-box-pack: center;
@@ -604,16 +593,8 @@ header {
   width: calc(40% - 100px);
   padding: 150px 0;
 }
-.about-me .text-container div h4, .about-me .text-container div a {
+.about-me .text-container div a {
   color: #ffffff;
-}
-.about-me .text-container div h3 {
-  color: #ff4952;
-  font-size: 2.5rem;
-}
-.about-me .text-container div h4 {
-  font-size: 6rem;
-  padding: 2rem 0;
 }
 .about-me .text-container div p {
   font-size: 1.8rem;
@@ -692,9 +673,6 @@ header {
   .about-me .text-container {
     margin: 0;
   }
-  .about-me .text-container div h4 {
-    font-size: 4rem;
-  }
 
   .circle {
     left: -50px;
@@ -732,14 +710,6 @@ header {
 .skill-container {
   padding: 100px 0;
   color: #ffffff;
-}
-.skill-container h3 {
-  color: #ff4952;
-  font-size: 2.5rem;
-}
-.skill-container h4 {
-  font-size: 6rem;
-  padding: 2rem 0;
 }
 .skill-container i {
   font-size: 6rem;
@@ -802,25 +772,14 @@ header {
   .skill-container li {
     padding: 3rem;
   }
-  .skill-container h4 {
-    font-size: 4rem;
-  }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 480px) {
   .skill-container li {
     padding: 2rem;
   }
 }
 .portfolio-section {
   color: #ffffff;
-}
-.portfolio-section h3 {
-  color: #ff4952;
-  font-size: 2.5rem;
-}
-.portfolio-section h4 {
-  font-size: 6rem;
-  padding: 2rem 0;
 }
 .portfolio-section .project-container {
   padding: 50px 0;
@@ -935,9 +894,6 @@ header {
 }
 
 @media screen and (max-width: 940px) {
-  .portfolio-section h4 {
-    font-size: 4rem;
-  }
   .portfolio-section .project-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,14 +954,6 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.other-project h3 {
-  color: #ff4952;
-  font-size: 2.5rem;
-}
-.other-project h4 {
-  font-size: 6rem;
-  padding: 2rem 0;
-}
 .other-project .card-container {
   padding: 30px;
   width: 50%;
@@ -1045,6 +993,56 @@ header {
   font-size: 2.5rem;
 }
 
+@media screen and (max-width: 760px) {
+  .other-project .project-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .other-project .project-body .card-container {
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+.contact {
+  color: #ffffff;
+}
+.contact h5 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+.contact p {
+  font-size: 2rem;
+  color: #808291;
+}
+.contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contact-container .main-contact, .contact .contact-container form {
+  width: 50%;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #252039;
+  padding: 50px;
+}
+.contact form input {
+  width: 100px;
+  height: 30px;
+}
+
 html {
   background-color: #07011e;
   background-image: url("../../assets/images/Lines.svg");
@@ -1053,4 +1051,25 @@ html {
 body {
   font-family: "Louis-George-Cafe.ttf";
   overflow: scroll;
+}
+
+h3 {
+  color: #ff4952;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 6rem;
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 760px) {
+  h3, h4 {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

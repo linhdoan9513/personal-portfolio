@@ -1,15 +1,5 @@
 .portfolio-section {
     color: $white;
-    
-    h3 {
-        color: $red;
-        font-size: 2.5rem;
-    }
-
-    h4 {
-        font-size: 6rem;
-        padding: 2rem 0;
-    }
 
     .project-container {
         padding: 50px 0;
@@ -126,9 +116,6 @@
 
 @media screen and (max-width: 940px) {
     .portfolio-section {
-        h4 {
-            font-size: 4rem;
-        }
 
         .project-container {
             display: flex;

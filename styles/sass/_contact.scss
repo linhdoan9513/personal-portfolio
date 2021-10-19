@@ -1,0 +1,33 @@
+.contact {
+    color: $white;
+
+    h5 {
+        font-size: 3rem;
+        padding: 2rem 0;
+    }
+
+    p {
+        font-size: 2rem; 
+        color: $grey;
+    }
+
+    .contact-container {
+        display: flex;
+        .main-contact, form {
+            width: 50%; 
+        }
+    }
+
+    form {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $lightNavy;
+        padding: 50px;
+
+        input {
+            width: 100px; 
+            height: 30px;
+        }
+    }
+}
