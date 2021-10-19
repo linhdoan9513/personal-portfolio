@@ -6,6 +6,7 @@
     <link rel="stylesheet" href='./styles/sass/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Linh Doan</title>
 </head>
 <body>
@@ -20,10 +21,10 @@
                   <a href="#portfolio" class="nav-link">Portfolio</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
+                  <a href="#contact" class="nav-link">Contact</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link resume">Resume</a>
+                  <a href="./assets/images/resume-linhV1.pdf" class="nav-link resume">Resume</a>
               </li>
           </ul>
           <div class="hamburger">
@@ -36,13 +37,12 @@
   <!-- END OF NAVIGATION PAGE -->
 
 
-
   <!-- START OF MAIN -->
   <main class="wrapper">
 
   <!-- START OF LANDING SECTION -->
-  <section class="landing-container">
-    <div  class="hero-section">
+  <section data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" class="landing-container">
+    <div class="hero-section">
       <span class="span"></span>
       <h1>Hello, I'm Linh Doan</h1>
       <h2 id="about">
@@ -63,33 +63,30 @@
 
   <!-- START OF ABOUT ME SECTION -->
   <section class="about-me">
-    <div class="image-container">
+    <div data-aos="fade-right" data-aos-duration="800" data-aos-once="true" class="image-container">
       <img
         class="profile-image"
-        src="./assets/images/home-men.png"
+        src="./assets/images/profileImage.JPG"
         alt="picture of the site owner"
       />
-      <img
+      <img   
         class="profile-background"
-        src="./assets/images/home-man-bg.png"
+        src="./assets/images/background.png"
         alt="navy background image"
       />
       <img class="circle" src="./assets/images/circle-dot-dot.svg" alt="navy background image" />
     </div>
-    <div class="text-container">
+    <div data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-once="true" class="text-container">
       <div>
         <h3>a little bit</h3>
         <h4>About Me</h4>
         <p>
-          I'm a front-end coding convert who is currently pivoting my way
+          I'm a front-end developer who is currently pivoting my way
           into tech.
           <br />
-          With a background in marketing and graphics production, I have
-          developed a strong understanding of web accessibility, SEO, and
-          different graphics aspect of things to build efficient and
-          intuitive sites.
+          My past experience in marketing & graphics production has allowed me to bring my understanding of web accessibility, SEO, and design into consideration when building applications.
         </p>
-        <a href="#" class="contact-button">
+        <a href="#contact" class="contact-button">
           <span>Contact Me</span><i class="fas fa-arrow-right"></i>
         </a>
       </div>
@@ -103,7 +100,7 @@
   <section class="skill-container">
     <h3>skills</h3>
     <h4>Some things I know </h4>
-        <ul class="skill-list">
+        <ul data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="true" class="skill-list">
         <li><i class="fab fa-html5"></i>Html5</li>
         <li><i class="fab fa-css3-alt"></i>Css3</li>
         <li><i class="fab fa-sass"></i>Sass</li>
@@ -126,13 +123,13 @@
     <h4>Some things I built </h4>
 
     <!-- START OF FEATURED PROJECT 1 -->
-    <div class="project-container">
+    <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-once="true" class="project-container">
       <div class="project-image">
-        <img class="portfolio" src="./assets/images/case-study-1.png" alt="portfolio1">
+        <img class="portfolio" src="./assets/images/budget-tracker.png" alt="personal budget tracker app">
       </div>
       <div class="project-text">
         <h5>Personal Budget App</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti cumque, doloremque dolore numquam autem illum in quas eius, dolorum facere est culpa eligendi ab maiores quos iste, sunt dolorem!</p>
+        <p>A personal budget app that helps users keeping track of their income and expense with pie chart visualizations. <br/> Built by using Firebase for backend, Firebase Google Authentication, React, Model View Controller for components design, and Nivo library for pie chart. </p>
         <h6>Tech Stack</h6>
         <ul class="tech">
           <li><i class="fab fa-html5"></i>Html5</li>
@@ -152,23 +149,23 @@
     <!-- END OF FEATURED PROJECT 1 -->
 
     <!-- START OF FEATURED PROJECT 2 -->
-    <div class="project-container reverse">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="true" class="project-container reverse">
       <div class="project-image">
         <img class="portfolio" src="./assets/images/case-study-1.png" alt="portfolio1">
       </div>
       <div class="project-text">
-        <h5>Covid Tracker</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti cumque, doloremque dolore numquam autem illum in quas eius, dolorum facere est culpa eligendi ab maiores quos iste, sunt dolorem!</p>
+        <h5>Crypto Tracker</h5>
+        <p>A crypto-currency tracker that displays real-time data as well as historical data of 20 different coins, a watch list for users to bookmark their favorite coins in window local storage.<br/> Initially built using Jquery, later rebuilt using React, ChartJS for individual line chart.</p>
         <h6>Tech Stack</h6>
         <ul class="tech">
           <li><i class="fab fa-html5"></i>Html5</li>
           <li><i class="fab fa-css3-alt"></i>Css3</li>
           <li><i class="fab fa-react"></i>React</li>
-          <li><img class="firebase" src="./assets/images/firebase.png" alt="firebase logo">Firebase</li>
+          <li><img class="jquery" src="./assets/images/jquerylogo.png" alt="jquery logo">Jquery</li>
         </ul>
         <h6>Take a peek</h6>
         <ul class="link">
-          <li><a href="https://budget-planner-linh.netlify.app/">Live Link</a></li>
+          <li><a href="https://crypto-tracker-fun.netlify.app/">Live Link</a></li>
           <li><a href="https://github.com/linhdoan9513/linh-doan-project3">Repo</a></li>
         </ul>
       </div>
@@ -176,19 +173,19 @@
     <!-- END OF FEATURED PROJECT 2 -->
 
     <!-- START OF FEATURED PROJECT 3 -->
-    <div class="project-container">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="true" class="project-container">
       <div class="project-image">
         <img class="portfolio" src="./assets/images/case-study-1.png" alt="portfolio1">
       </div>
       <div class="project-text">
         <h5>Cryptocurrency Tracker</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti cumque, doloremque dolore numquam autem illum in quas eius, dolorum facere est culpa eligendi ab maiores quos iste, sunt dolorem!</p>
+        <p></p>
         <h6>Tech Stack</h6>
         <ul class="tech">
           <li><i class="fab fa-html5"></i>Html5</li>
           <li><i class="fab fa-css3-alt"></i>Css3</li>
           <li><i class="fab fa-react"></i>React</li>
-          <li><img class="firebase" src="./assets/images/firebase.png" alt="firebase logo">Firebase</li>
+          <li><img class="firebase" src="./assets/images/firebase.png" alt="firebase logo">Jquery</li>
         </ul>
         <h6>Take a peek</h6>
         <ul class="link">
@@ -211,7 +208,7 @@
     <!-- START OF OTHER PROJECT 1 -->
 
     <div class="project-body">
-      <div class="card-container">
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="card-container">
       <div class="card-image">
         <img src="./assets/images/case-study-2.png" alt="other-project">
       </div>   
@@ -232,7 +229,7 @@
 
     <!-- START OF OTHER PROJECT 2 -->
 
-    <div class="card-container">
+    <div data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000" data-aos-once="true" class="card-container">
       <div class="card-image">
         <img src="./assets/images/case-study-2.png" alt="other-project">
       </div>   
@@ -257,10 +254,10 @@
 
   <!-- START OF CONTACT SECTION -->
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h3>contact</h3>
     <h4>Say Hello</h4>
-    <div class="contact-container">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="true" class="contact-container">
       <div class="main-contact">
         <h5>Mail</h5>
         <p>doanlinh9513@gmail.com</p>
@@ -269,16 +266,13 @@
       </div>
       <form action="https://formspree.io/f/mleakbra" method="POST">
       <label>
-        Email:
-        <input type="email" name="_replyto">
+        <input type="email" name="name" placeholder="Name">
       </label>
       <label>
-        Name:
-        <input type="email" name="name">
+        <input type="email" name="_replyto" placeholder="Email">
       </label>
       <label>
-        Message:
-        <textarea></textarea>
+        <textarea placeholder="Message:"></textarea>
       </label>
       <button type="submit">Send Message</button>
     </form>
@@ -287,8 +281,12 @@
   </section>
 
   <!-- END OF CONTACT SECTION -->
-
+  <footer>
+    <p>Developed By Linh Doan 2021</p>
+  </footer>
   </main>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./script.js"></script>
+
 </html>

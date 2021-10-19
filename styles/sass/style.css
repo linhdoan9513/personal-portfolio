@@ -274,6 +274,37 @@ img {
   max-width: 100%;
 }
 
+h3 {
+  color: #ff4952;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 6rem;
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+html {
+  background-color: #07011e;
+  background-image: url("../../assets/images/Lines.svg");
+}
+
+body {
+  font-family: "Louis-George-Cafe.ttf";
+  overflow: scroll;
+}
+
+@media screen and (max-width: 760px) {
+  h3,
+h4 {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
+}
 li {
   list-style: none;
 }
@@ -488,12 +519,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .landing-container .social-media .list li {
   font-size: 2rem;
+  margin-top: 2rem;
   padding: 1rem;
   margin-right: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.201);
@@ -558,7 +590,7 @@ header {
   .landing-container .social-media {
     width: 100%;
   }
-  .landing-container .social-media ul {
+  .landing-container .social-media .list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -656,6 +688,34 @@ header {
   top: -50px;
   left: -20px;
   z-index: 1;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 940px) {
@@ -793,6 +853,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -821,10 +884,14 @@ header {
   font-size: 3rem;
   padding: 0.8rem 0;
 }
-.portfolio-section .project-container .firebase {
+.portfolio-section .project-container .firebase,
+.portfolio-section .project-container .jquery {
   width: 2.5rem;
   height: auto;
   padding: 0.9rem 0;
+}
+.portfolio-section .project-container .jquery {
+  padding: 1rem 0;
 }
 .portfolio-section .project-container ul {
   display: -webkit-box;
@@ -849,12 +916,16 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .portfolio-section .project-container a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ffffff;
   cursor: pointer;
+}
+.portfolio-section .project-container a:focus,
+.portfolio-section .project-container a:hover {
+  color: #ffb74f;
 }
 .portfolio-section .project-container .link li {
   margin-top: 2rem;
@@ -1006,6 +1077,7 @@ header {
   }
 }
 .contact {
+  padding-bottom: 100px;
   color: #ffffff;
 }
 .contact h5 {
@@ -1024,6 +1096,9 @@ header {
 .contact .contact-container .main-contact, .contact .contact-container form {
   width: 50%;
 }
+.contact .contact-container .main-contact {
+  margin: auto;
+}
 .contact form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,38 +1113,88 @@ header {
   background-color: #252039;
   padding: 50px;
 }
-.contact form input {
-  width: 100px;
-  height: 30px;
-}
-
-html {
-  background-color: #07011e;
-  background-image: url("../../assets/images/Lines.svg");
-}
-
-body {
+.contact form textarea, .contact form input, .contact form button {
   font-family: "Louis-George-Cafe.ttf";
-  overflow: scroll;
-}
-
-h3 {
-  color: #ff4952;
-  font-size: 2.5rem;
-}
-
-h4 {
-  font-size: 6rem;
-  padding: 2rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.201);
+  background-color: #252039;
+  font-size: 20px;
   color: #ffffff;
+}
+.contact form label {
+  padding: 3rem 0;
+}
+.contact form input {
+  width: 100%;
+  height: 50px;
+}
+.contact form ::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.contact form ::-moz-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.contact form :-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.contact form ::-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.contact form ::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.contact form button {
+  padding: 10px 15px;
+  display: inline-block;
+  background: #fd5c4c;
+  font-size: 20px;
+}
+.contact form button:hover,
+.contact form button:focus {
+  background: #ffffff;
+  color: #fd5c4c;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 760px) {
-  h3, h4 {
+  .contact h5 {
+    font-size: 2.5rem;
+  }
+  .contact .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contact-container .main-contact,
+.contact .contact-container form {
+    width: 100%;
+  }
+  .contact .contact-container .main-contact {
     text-align: center;
+    margin: 50px 0;
   }
-
-  h4 {
-    font-size: 4rem;
-  }
+}
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.201);
+  color: #ffffff;
+  padding: 30px 0;
+}
+footer p {
+  font-size: 2em;
 }/*# sourceMappingURL=style.css.map */

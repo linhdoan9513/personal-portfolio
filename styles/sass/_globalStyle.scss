@@ -24,3 +24,38 @@ img {
     max-width: 100%;
 }
 
+h3 {
+    color: $red;
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 6rem;
+    padding: 2rem 0;
+    color: $white;
+}
+
+html {
+    background-color: $navy;
+    background-image: url('../../assets/images/Lines.svg');
+}
+
+body {
+    font-family: "Louis-George-Cafe.ttf";
+    overflow: scroll;
+}
+
+
+@media screen and (max-width: 760px) {
+
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {}

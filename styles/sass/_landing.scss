@@ -46,10 +46,11 @@
         .list {
               display: flex;
               flex-direction: row;
-              justify-content: flex-end;
+              justify-content: flex-start;
 
             li {
                 font-size: 2rem;
+                margin-top: 2rem;
                 padding: 1rem; 
                 margin-right: 1rem;
                 border: $border;
@@ -107,8 +108,9 @@
         .social-media {
             width: 100%;
 
-            ul {
+            .list {
                 justify-content: center;
+                
             }
         }
 

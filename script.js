@@ -15,3 +15,5 @@ const closeMenu = () => {
 
 hamburger.addEventListener("click", mobileMenu);
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+AOS.init();
