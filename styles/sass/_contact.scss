@@ -12,6 +12,48 @@
         color: $grey;
     }
 
+    .calendly {
+        margin: 4rem 2rem;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .calendly span {
+         color: $white;
+         position: relative;
+         font-size: 2rem;
+         top: 3px;
+    }
+
+    .calendly:hover::before {
+         width: 135%;
+         background: #ff4952;
+    }
+
+    .calendly::before {
+        content: "";
+        position: absolute;
+        top: -18px;
+        left: -20px;
+        display: block;
+        border-radius: 30px;
+        background: rgba(255, 73, 82, 0);
+        border: 1px solid rgba(255, 73, 82, 0.6);
+        border-right: 1px solid transparent;
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s ease;
+    }
+
+    .fas {
+        position: relative;
+        color: $white;
+        padding-left: 10px;
+        top: 3px;
+        font-size: 1.5rem;
+    }
+    
+
     .contact-container {
         display: flex;
         .main-contact, form {
