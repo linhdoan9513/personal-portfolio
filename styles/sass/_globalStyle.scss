@@ -5,7 +5,8 @@ html {
 
 body {
     font-family: "Louis-George-Cafe.ttf";
-    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 * {

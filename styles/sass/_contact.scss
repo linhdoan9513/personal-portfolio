@@ -81,6 +81,11 @@
             color: $white;
         }
 
+        textarea {
+            resize: none;
+            width: 100%;
+        }
+
         label {
             padding: 3rem 0;
         }
