@@ -24,7 +24,7 @@
         }
 
         h6 {
-            font-size: 2rem;
+            font-size: 1rem;
             border-bottom: 1px solid $orange;
             display: inline-block;
         }
@@ -41,13 +41,13 @@
         }
 
         .firebase,
-        .jquery {
+        .typescript {
             width: 2.5rem;
             height: auto;
             padding: 0.9rem 0;
         }
 
-        .jquery {
+        .typescript {
             padding: 1rem 0;
         }
 
@@ -61,6 +61,20 @@
                 align-items: center;
                 font-size: 2rem;
                 padding: 1rem;
+            }
+
+            .icon-project {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-bottom: 0.5rem;
+                margin-right: 0.5rem;
+                vertical-align: middle;
+                transition: transform 0.2s;
+                display: inline-block;
+            }
+            .icon-project:hover {
+                transform: scale(1.12);
+                filter: brightness(1.1);
             }
         }
 
